@@ -1,0 +1,9 @@
+body{
+	font-size: 75%;
+	font-family: Arial;
+}
+#step1, #welcome, #noAuth, #step2 {display:none}
+#loading{margin:50px 0 0 20px}
+.hidden{display:none}
+.connect_widget_vertical_center{display:none}
+.paging{clear: both}
