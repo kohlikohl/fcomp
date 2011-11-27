@@ -1,0 +1,8 @@
+/*
+IE stylesheet.
+@author: Peter Wimren <peter@peweedesign.com>
+@since: 0.2
+*/
+button {background: #ad207a;}
+#prevMessage {width:368px !important;Height:100px;}
+#appinfo p {width:275px;}

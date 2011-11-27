@@ -1,0 +1,59 @@
+-----------------------------------------
+FCOMP
+-----------------------------------------
+by Matthias Knoll
+www.kohlikohl.com
+version 0.2
+-----------------------------------------
+
+
+Try a live example here: http://on.fb.me/fcomp-kohlikohl
+
+
+
+
+INTRODUCTION
+-----------------------------------------
+This is a Facebook app which allows to hold competitions on facebook.
+
+
+FUNCTIONALLITY
+-----------------------------------------
+* Welcome screen where the user is promted to enter into the competition
+* Page on which the user needs to like 2 Facebook pages
+* Page on which the user needs to invote x amount of friends and post a message on their wall to enter the competition
+* Thank you page which shows after the user has entered the competition.
+
+* The App differentiates between male and femal users and shows different prices.
+
+
+REQUIREMENTS
+-----------------------------------------
+
+* PHP 5.2.0 or higher
+* MySql 5 database
+* SSL certificate on server (Facebook requirement as of 1 October 2011)
+
+
+INSTALLATION
+------------------------------------------
+* Download zip file
+* extract onto webserver
+* configure the App in conf/config.js
+* configure database access in classes/Base.class.php
+
+Setting up an App on Facebook:
+------------------------------
+* you need to create an App in the Facebook developer application: https://developers.facebook.com/apps
+* Give the app a name
+* Assign a namespace
+* Enter the domain name of your website in "App Domain" e.g. google.com
+* Click on "Website" and enter the URL to the folder where you have extracted the files to e.g. e.g. https://www.example.com/
+* Click on "Page Tab" and enter the URL to the tab folder e.g. https://www.example.com/tab/
+* Go to the "Advanced Settings" and change the "Enhanced Auth Dialog" to disabled
+* Also change "Canvas Height" to settable
+
+
+NOTE
+------------------------------------------
+You need to change the debug modus to false in order to post on a friends and your wall.

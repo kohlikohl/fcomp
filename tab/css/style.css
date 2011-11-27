@@ -1,9 +1,89 @@
-body{
-	font-size: 75%;
-	font-family: Arial;
-}
-#step1, #welcome, #noAuth, #step2 {display:none}
-#loading{margin:50px 0 0 20px}
+/*
+Stylesheet.
+@author: Peter Wimren <peter@peweedesign.com>
+@since: 0.2
+*/
+body, .ui-widget{font-size: 81.3%;color:#333;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;line-height:1.6em;margin:0px auto;}
+a:link, a:visited {color:#333;}
+a:hover, a:focus {color:#666;}
+hr {border:none;height:1px;border-bottom:1px dotted #333;float:left;clear:both;width:100%;margin:14px 0px;}
+.left {float:left;}
+.right {float:right;}
+a img {border:none;}
+#step1, #welcome, #noAuth, #step2, #step3 {display:none}
+#loading{margin:50px 0 0 20px;text-align:center;}
 .hidden{display:none}
 .connect_widget_vertical_center{display:none}
 .paging{clear: both}
+.ui-autocomplete {
+		max-height: 420px;
+		overflow: hidden;
+}
+
+button {border:none;outline:none;color:#fff;font-size:1.167em;line-height:1.78em;text-transform:uppercase;cursor:pointer;border:1px solid #3b5998;padding:0px 25px;
+background: #3b5998;
+background: -moz-linear-gradient(top,  #537fd6 0%, #3b5998 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#537fd6), color-stop(100%,#3b5998));
+background: -webkit-linear-gradient(top,  #537fd6 0%,#3b5998 100%);
+background: -o-linear-gradient(top,  #537fd6 0%,#3b5998 100%);
+background: -ms-linear-gradient(top,  #537fd6 0%,#3b5998 100%);
+background: linear-gradient(top,  #537fd6 0%,#3b5998 100%);}
+button:hover, button:focus {background:#3b5998;}
+#welcome strong {font-size:1.167em;}
+.dark a:link, .dark a:visited {color:#ccc;}
+#welcome a:hover, #welcome a:focus {color:#3b5998;}
+#welcome h2 {clear:both;background-position:0px -259px;margin-bottom:3px;}
+#welcome button, #inviteMore {margin:0px auto;padding:10px 120px;clear:both;-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;}
+#welcome ul {padding-left:16px;}
+#accordian {float:left;clear:both;}
+
+.save {display:block;background:#313131;float:left;width:100%;position:relative;color:#fff;-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;}
+.fig {display:block;background:#220A36;float:left;width:100%;position:relative;color:#fff;-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;}
+.save p, .fig p {float:left;margin:10px 20px;height:60px;}
+.save div, .fig div {position:absolute;top:30px;right:20px;}
+.save div div, .fig div div {position:relative;}
+
+#step2 h1 {background-position:0px -40px;}
+#step2 h2 {background-position:0px -120px;margin-top:45px;}
+#step3 h1 {background-position:0px -160px;}
+#step3 p {float:left;clear:left;width:100%;}
+#noAuth h1 {background-position:0px -80px;}
+#step2 {position:relative;}
+.absolute {z-index:2;position:absolute;top:20px;right:10px;}
+#content-female p, #content-male p {padding-right:140px;}
+
+#invitations {float:left;padding:5px 19px 19px;border:1px solid #220A36;background:#999;width:480px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;color:#fff;}
+#autocomplete {border:1px solid #220A36;color:#333;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:1.167em;line-height:1.78em;padding:4px 4px;width:160px;float:left;margin:0px 5px;}
+#addFriend {float:left;}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;border:1px solid #220A36;}
+.ui-menu .ui-menu-item a {float:left;padding:4px;display:block;width:184px;}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {background:#dedae1;border-color:#594768;margin:0px !important;}
+.ui-menu .ui-menu-item span.tick, .ui-menu .ui-menu-item span.tick img {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;}
+.ui-menu-item a img {float:left;margin:0px 10px 0px 0px;}
+#selectedFriends div {float:left;width:120px;padding:0px 10px;text-align:center;border-left:1px dotted #fff;}
+#selectedFriends>div:first-of-type {border:none;}
+#selectFriends, #invite {clear:left;padding-top:10px;}
+#selectFriends img {border:1px solid #220A36;}
+#invitations a:link, #invitations a:visited {color:#fff;}
+#preview {float:left;width:100%;border-top:1px dotted #fff;margin-top:10px;}
+#previewProfile {float:left;margin-right:10px;border:1px solid #220A36;}
+#prevMessage {float:left;border:1px solid #220A36;color:#333;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:1em;padding:4px 4px;width:417px;}
+#appinfo {float:left;padding:10px 0px 0px 62px;}
+#appinfo img {float:left;margin-right:10px;width:90px;}
+#appinfo p {float:left;width:296px;margin:0px 0px 10px 0px;}
+#appinfo p strong {display:block;}
+#appinfo p a:link, #appinfo p a:visited {color:#fff;}
+#postToWall {float:right;clear:left;margin-top:15px;padding:5px 41px;}
